@@ -1,0 +1,66 @@
+@import "variables";
+
+:host {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: $color-titles;
+
+    img {
+      width: 150px;
+    }
+
+    ul {
+      display: flex;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(175, 175, 175, 0.3);
+
+      li {
+        padding: 20px;
+        transition: background-color 0.8s ease;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-nameItems;
+          background-color: $color-Hovers;
+        }
+      }
+    }
+
+    .login {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      a {
+        outline: none;
+
+        &:visited {
+          color: $color-titles;
+        }
+      }
+
+      span:hover {
+        color: $color-Hovers;
+      }
+
+      button {
+        padding: 8px 15px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        background-color: $color-backgroundItems;
+        color: $color-nameItems;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-Hovers;
+        }
+      }
+    }
+  }
+}
