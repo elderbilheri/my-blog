@@ -25,7 +25,7 @@
 
         &:hover {
           color: $color-nameItems;
-          background-color: $color-Hovers;
+          background-color: $color-hovers;
         }
       }
     }
@@ -44,7 +44,7 @@
       }
 
       span:hover {
-        color: $color-Hovers;
+        color: $color-hovers;
       }
 
       button {
@@ -58,7 +58,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: $color-Hovers;
+          background-color: $color-hovers;
         }
       }
     }
