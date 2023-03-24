@@ -1,0 +1,87 @@
+@import "variables";
+
+:host {
+  .rightPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    max-width: 350px;
+    height: 480px;
+    max-width: 480px;
+    border-radius: 10px;
+    background-color: $color-background;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+
+    .news {
+      width: 80%;
+      display: flex;
+      margin-top: 30px;
+      padding-bottom: 10px;
+      align-items: start;
+      gap: 10px;
+      border-bottom: 1px solid rgba($color-titles, 0.1);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+
+        p {
+          margin-bottom: 8px;
+        }
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        opacity: 0.75;
+        transform: rotate(10deg);
+      }
+    }
+  }
+
+  .users {
+    width: 80%;
+
+    h2 {
+      padding-top: 10px;
+    }
+  }
+
+  .lastNews {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    padding-top: 10px;
+    border-top: 1px solid rgba($color-titles, 0.1);
+
+    div {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        width: 100px;
+        height: 80px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        h3 {
+          transition: color 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-hovers;
+          }
+        }
+      }
+    }
+  }
+}

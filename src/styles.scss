@@ -22,3 +22,33 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.button {
+  width: 60%;
+  padding: 8px 10px;
+  white-space: nowrap;
+  border: none;
+  color: $color-nameItems;
+  border-radius: 10px;
+  background-color: $color-backgroundItems;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-nameItems;
+    background-color: $color-hovers;
+  }
+}
+
+.titles {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: $color-titles;
+}
+
+.subtitles {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $color-subtitles;
+}

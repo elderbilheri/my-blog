@@ -1,1 +1,27 @@
-<p>right-panel works!</p>
+<div class="rightPanel">
+  <div class="news">
+    <div>
+      <h2 class="titles">Bill Gates: "IA é a tecnologia mais revolucionária que existe"</h2>
+      <p class="subtitles">James Evans, do LinkedIn</p>
+      <button class="button">Visualizar Post</button>
+    </div>
+    <img [src]="imgItem" alt="icone">
+  </div>
+
+  <div class="users">
+    <h2 class="titles">Sugestões para Seguir </h2>
+    <list-users images="../assets/images/perfil/img1.png" name="Wendy Smith" profession="Diretora Artística"></list-users>
+    <list-users images="../assets/images/perfil/img4.jpg" name="Frank Webber" profession="Engenheiro Agrônomo"></list-users>
+    <list-users images="../assets/images/perfil/img3.png" name="Susan Norton" profession="Repórter e Jornalista"></list-users>
+  </div>
+
+  <div class="lastNews">
+    <h2 class="titles">Última Leitura</h2>
+    <div>
+      <img [src]="imgLastNews" alt="">
+      <div>
+        <h3 class="titles">Criador da Ethernet ganha o Prêmio Turing</h3>
+        <p class="subtitles">Bob Metcalfe foi pioneiro em redes de computação</p>
+      </div>
+    </div>
+  </div>

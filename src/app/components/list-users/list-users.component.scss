@@ -1,0 +1,33 @@
+@import "variables";
+
+.sugestions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      border-radius: 50%;
+      width: 40px;
+      box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  button {
+    max-width: 30%;
+  }
+}

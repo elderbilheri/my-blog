@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './right-panel.component.html',
   styleUrls: ['./right-panel.component.scss'],
 })
-export class RightPanelComponent {}
+export class RightPanelComponent {
+  imgItem = '../assets/images/news.png';
+  imgLastNews = '../assets/images/internet.png';
+}

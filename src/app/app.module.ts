@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { RightPanelComponent } from './components/right-panel/right-panel.component';
+import { ListUsersComponent } from './components/list-users/list-users.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RightPanelComponent } from './components/right-panel/right-panel.compon
     LeftPanelComponent,
     PostsComponent,
     RightPanelComponent,
+    ListUsersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [BlogService],
