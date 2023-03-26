@@ -2,12 +2,12 @@
 
   <div class="articles">
     <h3 class="titles">Artigos</h3>
-    <img [src]="imgIcon">
+    <img src="assets/images/news.png">
   </div>
 
   <div class="postNew" *ngFor="let post of posts">
     <div class="postUser">
-      <img [src]="imgUsers" alt="user">
+      <img src="assets/images/perfil/img4.jpg" alt="user">
       <h4 class="titles">{{ getUserName(post) }} </h4>
     </div>
 
@@ -16,7 +16,7 @@
         <h2 class="titles"> {{ post.title }} </h2>
         <p class="subtitles"> {{ post.body }} </p>
       </div>
-      <img class="imgNews" [src]="imgNews" alt="notícia">
+      <img class="imgNews" src="assets/images/news2.jpg" alt="notícia">
     </div>
     <div class="postButtons">
       <button class="button" (click)="loadComments(post.id)">Comentários</button>

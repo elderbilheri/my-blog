@@ -11,10 +11,6 @@ import { User } from './../../interfaces/IUsers';
   styleUrls: ['./posts.component.scss', './posts.responsive.component.scss'],
 })
 export class PostsComponent implements OnInit {
-  imgIcon = '../assets/images/news.png';
-  imgNews = '../assets/images/news2.jpg';
-  imgUsers = '../assets/images/perfil/img4.jpg';
-
   posts: Post[] = [];
   comments: Comment[] = [];
   users: User[] = [];

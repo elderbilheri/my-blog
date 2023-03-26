@@ -8,9 +8,4 @@ import { Component } from '@angular/core';
     './right-panel.responsive.component.scss',
   ],
 })
-export class RightPanelComponent {
-  imgItem = '../assets/images/news.png';
-  imgLastNews = '../assets/images/internet.png';
-  imgRobot = '../assets/images/robot.jpg';
-  imgTurbine = '../assets/images/turbine.jpg';
-}
+export class RightPanelComponent {}

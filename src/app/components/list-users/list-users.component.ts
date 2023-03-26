@@ -10,8 +10,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ListUsersComponent {
   @Input()
-  images: string = '';
-  @Input()
   name: string = '';
   @Input()
   profession: string = '';
