@@ -11,13 +11,13 @@ import { Component } from '@angular/core';
 export class LeftPanelComponent {
   name: string = 'Elder Bilheri';
 
-  imgUser = 'assets/images/user.png';
+  imgUser = '/assets/images/user.png';
 
   //icones
-  feedIcon = 'assets/images/icons/feed.svg';
-  followIcon = '../assets/images/icons/follow.svg';
-  searchIcon = '../assets/images/icons/search.svg';
-  statisticsIcon = '../assets/images/icons/statistics.svg';
-  helpIcon = '../assets/images/icons/help.svg';
+  feedIcon = '../assets/images/icons/feed.svg';
+  followIcon = './assets/images/icons/follow.svg';
+  searchIcon = '/assets/images/icons/search.svg';
+  statisticsIcon = 'src/assets/images/icons/statistics.svg';
+  helpIcon = '/assets/images/icons/help.svg';
   bellpIcon = '../assets/images/icons/bell.svg';
 }
