@@ -27,12 +27,14 @@ export class PostsComponent implements OnInit {
     this.loadUsers();
   }
 
+  // Método que carrega os dados dos posts e salva na propriedade posts
   loadPosts() {
     this.blogService.getPosts().subscribe((posts: Post[]) => {
       this.posts = posts;
     });
   }
 
+  // Método que carrega os dados dos comentários e salva na propriedade comments
   loadComments(postId: number) {
     this.selectedPostId = postId;
     this.blogService.getComments(postId).subscribe((comments: Comment[]) => {
@@ -40,12 +42,14 @@ export class PostsComponent implements OnInit {
     });
   }
 
+  // Método que carrega os dados dos usuários e salva na propriedade users
   loadUsers() {
     this.blogService.getUsers().subscribe((users: User[]) => {
       this.users = users;
     });
   }
 
+  // Método que busca o nome do usuário através do id do post
   getUserName(post: Post): string {
     const user = this.users.find((user) => user.id === post.userId);
     return user ? user.name : '';

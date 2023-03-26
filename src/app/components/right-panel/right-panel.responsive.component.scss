@@ -25,10 +25,11 @@
       .lastNews {
         width: 90%;
         padding-bottom: 10px;
+        text-align: center;
+        align-items: center;
 
         h2 {
           font-size: 0.85rem;
-          color: $color-hovers;
         }
 
         div {
@@ -39,6 +40,44 @@
           div {
             padding-left: 10px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :host {
+    .rightPanel {
+      height: initial;
+      max-height: initial;
+      width: 100%;
+      max-width: initial;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .users {
+        margin-top: 10px;
+      }
+
+      .news {
+        justify-content: center;
+
+        div {
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      .lastNews {
+        width: 90%;
+        padding-bottom: 5px;
+        text-align: center;
+        margin-top: 10px;
+
+        h2 {
+          font-size: 1rem;
+          padding-bottom: 5px;
         }
       }
     }

@@ -1,0 +1,46 @@
+@import "variables";
+
+@media screen and (max-width: 620px) {
+  :host {
+    .nav {
+      padding: 10px;
+      font-size: 0.85rem;
+      color: $color-titles;
+
+      img {
+        width: 70px;
+      }
+
+      ul {
+        li {
+          padding: 8px;
+        }
+      }
+
+      .login {
+        gap: 8px;
+
+        button {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :host {
+    .nav {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+
+      .login {
+        grid-column: 2;
+        grid-row: 2;
+        justify-content: end;
+        margin-top: 5px;
+      }
+    }
+  }
+}

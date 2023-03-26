@@ -1,42 +1,45 @@
-<div>
+<div class="leftPanel">
+
   <div class="user">
     <img [src]="imgUser" alt="user">
     <span> {{ name }} </span>
   </div>
 
   <div class="menu">
-    <h2>Menu</h2>
-    <ul>
-      <li>
-        <img [src]="feedIcon" alt="">
-        <span>Feed</span>
-      </li>
-      <li>
-        <img [src]="searchIcon" alt="">
-        <span>Explorar</span>
-      </li>
-      <li>
-        <img [src]="helpIcon" alt="">
-        <span>Ajuda</span>
-      </li>
-    </ul>
-  </div>
+    <div class="menuItem">
+      <h2>Menu</h2>
+      <ul>
+        <li>
+          <img [src]="feedIcon" alt="">
+          <span>Feed</span>
+        </li>
+        <li>
+          <img [src]="searchIcon" alt="">
+          <span>Explorar</span>
+        </li>
+        <li>
+          <img [src]="helpIcon" alt="">
+          <span>Ajuda</span>
+        </li>
+      </ul>
+    </div>
 
-  <div class="menu">
-    <h2>Portfólio</h2>
-    <ul>
-      <li>
-        <img [src]="followIcon" alt="">
-        <span>Seguidores</span>
-      </li>
-      <li>
-        <img [src]="bellpIcon" alt="">
-        <span>Notificações</span>
-      </li>
-      <li>
-        <img [src]="statisticsIcon" alt="">
-        <span>Estastísticas</span>
-      </li>
-    </ul>
+    <div class="menuItem">
+      <h2>Portfólio</h2>
+      <ul>
+        <li>
+          <img [src]="followIcon" alt="">
+          <span>Seguidores</span>
+        </li>
+        <li>
+          <img [src]="bellpIcon" alt="">
+          <span>Notificações</span>
+        </li>
+        <li>
+          <img [src]="statisticsIcon" alt="">
+          <span>Estastísticas</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
