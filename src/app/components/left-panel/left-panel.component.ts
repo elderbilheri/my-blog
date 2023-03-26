@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class LeftPanelComponent {
   name: string = 'Elder Bilheri';
 
+  imgUser = '../assets/images/user.png';
+
   //icones
   feedIcon = '../assets/images/icons/feed.svg';
   followIcon = '../assets/images/icons/follow.svg';

@@ -2,7 +2,17 @@
 @import "variables.scss";
 
 body {
-  background-color: $color-theme;
+  background-image: linear-gradient(
+    180deg,
+    #f26c6c 0%,
+    #f0e481 67%,
+    #ffe53b 98%
+  );
+  background-size: 200% 200%;
+
+  height: 100vh;
+  max-height: 100vh;
+  // overflow: hidden;
 }
 
 * {
@@ -12,6 +22,7 @@ body {
   text-decoration: none;
   list-style: none;
   font-family: "Montserrat", sans-serif;
+  color: #add8e6;
 }
 
 .backgrondBody {

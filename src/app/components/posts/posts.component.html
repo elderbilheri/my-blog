@@ -1,1 +1,34 @@
-<p>posts works!</p>
+<div class="posts">
+
+  <div class="articles">
+    <h3 class="titles">Artigos</h3>
+    <img [src]="imgIcon">
+  </div>
+
+  <div class="postNew" *ngFor="let post of posts">
+    <div class="postUser">
+      <img [src]="imgUsers" alt="user">
+      <h4 class="titles">{{ getUserName(post) }} </h4>
+    </div>
+
+    <div class="postNewImg">
+      <div class="postDescription">
+        <h2 class="titles"> {{ post.title }} </h2>
+        <p class="subtitles"> {{ post.body }} </p>
+      </div>
+      <img class="imgNews" [src]="imgNews" alt="notícia">
+    </div>
+    <div class="postButtons">
+      <button class="button" (click)="loadComments(post.id)">Comentários</button>
+      <button class="button">Compartilhar</button>
+    </div>
+
+    <div class="comments" *ngIf="selectedPostId === post.id">
+      <div class="commentsBody" *ngFor="let comment of comments">
+        <h5 class="titles"> {{ comment.name }} </h5>
+        <p class="subtitles"> {{ comment.body }} </p>
+        <span> {{ comment.email }} </span>
+      </div>
+    </div>
+  </div>
+</div>

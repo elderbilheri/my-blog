@@ -1,0 +1,46 @@
+@import "variables";
+
+@media screen and (max-width: 1071px) {
+  :host {
+    .rightPanel {
+      width: 250px;
+
+      .news {
+        width: 90%;
+
+        button {
+          font-size: 0.7rem;
+          width: 95px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      .users {
+        width: 90%;
+      }
+
+      .lastNews {
+        width: 90%;
+        padding-bottom: 10px;
+
+        h2 {
+          font-size: 0.85rem;
+          color: $color-hovers;
+        }
+
+        div {
+          img {
+            display: none;
+          }
+
+          div {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

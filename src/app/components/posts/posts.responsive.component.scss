@@ -1,0 +1,14 @@
+@import "variables";
+
+@media screen and (max-width: 1072px) {
+  :host {
+    .posts {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .imgNews {
+      display: none;
+    }
+  }
+}

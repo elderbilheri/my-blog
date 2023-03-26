@@ -4,22 +4,25 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Post } from './../interfaces/IPosts';
 import { Comment } from './../interfaces/IComments';
+import { User } from './../interfaces/IUsers';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BlogService {
-  private Urlposts = 'https://jsonplaceholder.typicode.com/posts';
-  private Urlcomments = 'https://jsonplaceholder.typicode.com/comments';
-
   constructor(private http: HttpClient) {}
 
   getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.Urlposts);
+    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
   }
 
   getComments(postId: number): Observable<Comment[]> {
-    const url = `${this.Urlcomments}?postId=${postId}`;
-    return this.http.get<Comment[]>(url);
+    return this.http.get<Comment[]>(
+      `https://jsonplaceholder.typicode.com/posts/${postId}/comments`
+    );
+  }
+
+  getUsers(): Observable<User[]> {
+    return this.http.get<User[]>('https://jsonplaceholder.typicode.com/users');
   }
 }
